@@ -12,7 +12,7 @@ class loginpage {
 
     }
 
-    async logintap(login){
+    async logintap(){
         await this.login.click(); 
     }
 
@@ -24,11 +24,11 @@ class loginpage {
         await this.passfield.fill(password);
     }
 
-    async clicklogin(loginbutton) {
+    async clicklogin() {
         await this.loginbutton.click();
     }
 
-    async clickclose(closebutton){
+    async clickclose(){
         await this.closebutton.click();
     }
 

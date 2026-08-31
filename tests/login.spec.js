@@ -18,7 +18,9 @@ test('DemoBlaze valid Login' , async({page})=>{
     await vl.enterpassword(passwordvalue);
     await vl.clicklogin();
 
-    await expect(page.locator("#nameofuser")).toHaveText("Welcome abhilash.9");    
+    //await expect(page.locator("#nameofuser")).toHaveText("Welcome abhilash.9");    
+    await expect(page.locator("#nameofuser"))
+    .toHaveText(`Welcome ${usernamevalue}`, { timeout: 10000 });
 
 }) 
 
