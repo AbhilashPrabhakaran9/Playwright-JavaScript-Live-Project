@@ -111,7 +111,7 @@ test('Product purchase under phones', async({page})=>{
 })
 
 //Test case 9
-test.only('Product purchase under Monitors', async({page})=>{
+test('Product purchase under Monitors', async({page})=>{
 
     /*await page.goto("https://demoblaze.com/");
 

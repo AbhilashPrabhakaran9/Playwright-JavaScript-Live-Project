@@ -25,7 +25,7 @@ test('DemoBlaze valid Login' , async({page})=>{
 //Test case 4,5,6
 
 for(const data of paratestdata) {
-test.only(`DemoBlaze invalid Logins ${data.username} , ${data.password}` , async({page})=>{
+test(`DemoBlaze invalid Logins ${data.username} , ${data.password}` , async({page})=>{
 
     await page.goto("https://demoblaze.com/");
 

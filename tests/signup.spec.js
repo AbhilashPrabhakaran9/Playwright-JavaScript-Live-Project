@@ -30,7 +30,7 @@ test("DemoBlaze Sign up", async({page})=>{
 });
 
 //Test case 2 - Sign up and close [Sign up --> Enter data --> Click close]
-test.only("DemoBlaze Sign up close", async({page})=>{
+test("DemoBlaze Sign up close", async({page})=>{
     await page.goto("https://demoblaze.com/");
     const suc = new signupclose(page);
     
